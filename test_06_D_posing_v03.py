@@ -1,13 +1,14 @@
 # Posing Test and Setup
 
-import ThisPico_F_v05 as ThisPico
+import ThisPico_F_v10 as ThisPico
 import utime
 
 module_name = 'test_06_D_posing_v03.py'
 
 print (module_name, "starting")
 
-my_arm = ThisPico.ThisArm()
+board_object = ThisPico.Kitronik.Kitronik('The Only Board')
+my_arm = ThisPico.ThisArm(board_object)
 #my_arm.poses['PARK'] = [[my_arm.shoulder_servo,90],[my_arm.bucket_servo,90]]
 #my_arm.poses['UP'] = [[my_arm.shoulder_servo,100],[my_arm.bucket_servo,110]]
 #my_arm.poses['DUMP'] = [[my_arm.shoulder_servo,90],[my_arm.bucket_servo,155]]
@@ -32,5 +33,8 @@ utime.sleep(3)
 #utime.sleep(3)
 do_pose('PARK', speed)
 utime.sleep(1)
+
+my_arm.close()
+board_object.close()
 
 print (module_name, "finished")

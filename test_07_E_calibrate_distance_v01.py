@@ -1,4 +1,4 @@
-import PicoBotF_v03 as ThisPico
+import ThisPico_F_v07 as ThisPico
 import utime
 
 my_drive_train = ThisPico.ThisDriveTrain()

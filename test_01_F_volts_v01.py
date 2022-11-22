@@ -1,7 +1,5 @@
-import PicoBotF_v02 as PicoBotF
+import ThisPico_F_v08 as ThisPico
 
-this_volts = PicoBotF.ThisVolts()
-if not this_volts.valid:
-    print ('volts object creation failed')
-else:
-    print (this_volts.name, this_volts.read())
+my_volts = ThisPico.onboard_volts
+
+print (my_volts.name, my_volts.read())

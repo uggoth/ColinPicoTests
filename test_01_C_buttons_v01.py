@@ -1,18 +1,21 @@
-import PicoP_v01 as Pico
-GPIOPico = Pico.GPIOPico
+import PicoBotF_v02 as ThisPico
+GPIO = ThisPico.GPIO
 import utime
 
 module_name = 'test_01_C_buttons_v01.py'
 print (module_name, 'starting')
 
-these_buttons = Pico.TheseButtons()
+these_buttons = ThisPico.TheseButtons()
 
-my_buttons = GPIOPico.Button.button_list
+my_buttons = GPIO.Button.button_list
 
+print ('NOTE: On Pico F the red button is hard-wired to RESET')
+
+out_string = "List of buttons:\n"
 for button in my_buttons:
     button.previous = 'UNKNOWN'
-
-print (my_buttons)
+    out_string += '   ' + button.name + "\n"
+print (out_string)
 
 for i in range(100):
     utime.sleep(0.1)

@@ -1,4 +1,4 @@
-import PicoBotF_v03 as ThisPico
+import ThisPico_F_v09 as ThisPico
 import utime
 
 module_name = 'test_06_C_shoulder_and_bucket_v02.py'

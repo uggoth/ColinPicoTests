@@ -17,12 +17,12 @@ for i in range(len(gpio_list)):
     output += "{0:02d} ".format(gpio_list[i])
 print (output)
 
-for i in range(10):
+for i in range(20):
     output = ' '
     for j in range(len(gpio_list)):
         output += str(gpios[j].value()) + "  "
     print (output)
-    utime.sleep_ms(1000)
+    utime.sleep_ms(2000)
 
 print ("")
 print (module_name, "finished")

@@ -18,3 +18,5 @@ for i in range(1900):
         if current != sensor.previous:
             sensor.previous = current
             print (name,'is now',current)
+
+print (module_name, "finished")
