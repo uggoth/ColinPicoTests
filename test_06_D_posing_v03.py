@@ -1,6 +1,6 @@
 # Posing Test and Setup
 
-import ThisPico_F_v10 as ThisPico
+import ThisPico_D_v12 as ThisPico
 import utime
 
 module_name = 'test_06_D_posing_v03.py'

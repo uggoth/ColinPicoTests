@@ -1,17 +1,16 @@
-import PicoBotF_v02 as ThisPico
+module_name = 'test_01_C_buttons_v02.py'
+
+import ThisPico_D_v13 as ThisPico
 GPIO = ThisPico.GPIO
 import utime
 
-module_name = 'test_01_C_buttons_v01.py'
 print (module_name, 'starting')
 
 these_buttons = ThisPico.TheseButtons()
 
 my_buttons = GPIO.Button.button_list
 
-print ('NOTE: On Pico F the red button is hard-wired to RESET')
-
-out_string = "List of buttons:\n"
+out_string = "List of buttons in :\n"
 for button in my_buttons:
     button.previous = 'UNKNOWN'
     out_string += '   ' + button.name + "\n"

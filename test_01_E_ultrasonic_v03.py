@@ -1,6 +1,6 @@
-module_name = 'test_01_E_ultrasonic_v02.py'
+module_name = 'test_01_E_ultrasonic_v03.py'
 
-import ThisPico_F_v10 as ThisPico
+import ThisPico_D_v13 as ThisPico
 import utime
 
 print (module_name, 'starting')

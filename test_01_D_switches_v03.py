@@ -1,8 +1,9 @@
-import PicoBotF_v03 as ThisPico
+module_name = 'test_01_D_switches_v03.py'
+
+import ThisPico_D_v13 as ThisPico
 GPIO = ThisPico.GPIO
 import utime
 
-module_name = 'test_01_D_switches_v02.py'
 print (module_name, 'starting')
 
 these_switches = ThisPico.TheseSwitches()

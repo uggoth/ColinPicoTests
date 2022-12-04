@@ -1,4 +1,4 @@
-import PicoBotF_v02 as ThisPico
+import ThisPico_D_v13 as ThisPico
 import utime
 
 module_name = 'test_01_B_IR_Sensors_v01.py'
