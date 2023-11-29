@@ -3,7 +3,7 @@ description = 'test ThisPico object'
 
 print (module_name, 'starting')
 
-import ThisPico_A_V26 as ThisPico
+import ThisPico_A_V28 as ThisPico
 ColObjects = ThisPico.ColObjects
 import utime
 

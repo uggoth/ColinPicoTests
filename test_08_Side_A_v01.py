@@ -1,6 +1,6 @@
 module_name = 'test_08_Side_A_v01.py'
 
-import ThisPico_A_V25 as ThisPico
+import ThisPico_A_V28 as ThisPico
 ColObjects = ThisPico.ColObjects
 import utime
 

@@ -3,7 +3,7 @@ description = 'test object'
 
 print (module_name, 'starting')
 
-import Motor_V02 as Motor
+import Motor_V03 as Motor
 ColObjects = Motor.ColObjects
 import utime
 
