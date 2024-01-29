@@ -1,7 +1,7 @@
 module_name = 'test_15_B_USB_send_v01.py'
 print (module_name, 'starting')
 
-import CommandStreamPico_v02 as CommandStream
+import CommandStreamPico_V05 as CommandStream
 import utime
 
 my_stream = CommandStream.CommandStream()

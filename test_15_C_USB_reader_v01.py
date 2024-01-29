@@ -11,7 +11,7 @@ utime.sleep(9)
 
 logging = open('test_15_C.txt','w')
 
-for i in range(9):
+for i in range(29):
     utime.sleep_ms(1000)
     message = my_stream.get(400).upper()
     if not message:
